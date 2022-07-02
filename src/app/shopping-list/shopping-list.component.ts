@@ -1,3 +1,4 @@
+import { Ingredient } from '../shared/ingredient.modet';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ShoppingListComponent implements OnInit {
 
+  ingredients: Ingredient[] =[
+    new Ingredient('Apples', 5),
+    new Ingredient('Tomatoes', 10)
+  ];
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addIngredient(ingredient:Ingredient){
+    this.ingredients.push(ingredient);
   }
 
 }
