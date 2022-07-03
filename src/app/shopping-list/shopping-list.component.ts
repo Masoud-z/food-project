@@ -1,4 +1,4 @@
-import { Ingredient } from '../shared/ingredient.modet';
+import { Ingredient } from '../shared/ingredient.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

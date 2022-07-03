@@ -7,5 +7,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class AppComponent {
-  title = 'food-projrct';
+  title = 'food-projecr';
+  loadedFeature = 'recipes'
+
+  onNavigate(feature: string){
+    this.loadedFeature = feature;
+  }
+
 }
