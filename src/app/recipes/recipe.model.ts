@@ -1,4 +1,4 @@
-import { Ingredient } from 'src/app/shared/ingredient.modet';
+
 import { Ingredient } from "../shared/ingredient.model";
 
 export class Recipe{
