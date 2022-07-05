@@ -2,7 +2,7 @@
 <div class="container">
   <div class="row">
     <div class="col-md-12"></div>
-    <app-recipes *ngIf="loadedFeature === 'recipes'"></app-recipes>
+    <router-outlet></router-outlet>
     <app-shopping-list *ngIf="loadedFeature !== 'recipes'"></app-shopping-list>
   </div>
 </div>
