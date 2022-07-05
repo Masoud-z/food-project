@@ -21,4 +21,8 @@ export class RecipeService{
     getRecipes(){
         return this.recipes.slice();
     }
+
+    getRecipe(idndex:number){
+      return this.recipes[idndex];
+    }
 }
